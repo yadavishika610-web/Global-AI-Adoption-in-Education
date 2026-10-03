@@ -1,0 +1,86 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Global AI Adoption in Education</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 25px;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .navigation {
+            margin: 20px;
+        }
+
+        .navigation button {
+            padding: 12px 25px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        iframe {
+            background-color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Global AI Adoption in Education</h1>
+
+    <p>Global Performance Intelligence Dashboard</p>
+
+    <div class="navigation">
+        <button onclick="showDashboard()">Dashboard</button>
+        <button onclick="showStory()">Story</button>
+    </div>
+
+    <div id="dashboard">
+        <iframe
+            src="https://public.tableau.com/views/Global_AI_Adoption_Public/GlobalAIAdoptioninEducation?:showVizHome=no"
+            width="1200"
+            height="900"
+            frameborder="0">
+        </iframe>
+    </div>
+
+    <div id="story" style="display:none;">
+        <iframe
+            src="https://public.tableau.com/views/Global_AI_Adoption_Public/ExecutiveOverview?:showVizHome=no"
+            width="1200"
+            height="900"
+            frameborder="0">
+        </iframe>
+    </div>
+
+    <script>
+        function showDashboard() {
+            document.getElementById("dashboard").style.display = "block";
+            document.getElementById("story").style.display = "none";
+        }
+
+        function showStory() {
+            document.getElementById("dashboard").style.display = "none";
+            document.getElementById("story").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
+```
